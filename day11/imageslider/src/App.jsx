@@ -17,7 +17,7 @@ export default function App({ images = defaultImages }) {
     if (!images || images.length === 0) return;
     const id = setInterval(() => {
       setIndex((i) => (i + 1) % images.length);
-    }, 4000); // auto-advance every 4s
+    }, 4000); 
     return () => clearInterval(id);
   }, [images]);
 
@@ -40,8 +40,8 @@ export default function App({ images = defaultImages }) {
           draggable={false}
         />
       </div>
+      <div
 
-      <div style={styles.controls}>
         <button onClick={prev} aria-label="Previous slide" style={styles.controlBtn}>
           Prev
         </button>

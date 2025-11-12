@@ -1,0 +1,17 @@
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    align-items: center;
+}
+.nav-items{
+    display: flex;
+    gap:20px
+}
+.nav-items a{
+    color: white;
+    font: bold;
+    font-size: 32px;
+    text-decoration: none;
+}
